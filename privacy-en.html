@@ -12,8 +12,8 @@
 <body><main>
   <div class="beads" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <h1>BeadCube Privacy Policy</h1>
-  <p class="meta">Effective August 13, 2026</p>
-  <div class="summary"><strong>In one sentence</strong>BeadCube is a local app with no developer-operated account or backend. Photo conversion, pattern editing, and structure checks happen on your iPhone or iPad; we do not upload your photos or patterns to our own servers.</div>
+  <p class="meta">Effective August 17, 2026</p>
+  <div class="summary"><strong>In one sentence</strong>BeadCube is a local-first app with no developer-operated account system or backend. Photo conversion, pattern editing, and structure checks happen on your iPhone or iPad. We do not upload photos or patterns to our own servers; project content is sent through Apple iCloud only if you choose to enable iCloud Project Sync.</div>
 
   <h2>1. Scope</h2>
   <p>This Policy applies to BeadCube (the “App”) and explains how information is handled when you import photos, create and save fuse-bead patterns, manage bead inventory, and purchase Pro features.</p>
@@ -22,6 +22,9 @@
   <ul>
     <li><strong>Photos you select:</strong> Read only after you choose them, for cropping, background removal, color matching, and pattern generation. Processing occurs on device. If you set a photo as a tracing reference, a local copy is saved with the project.</li>
     <li><strong>Projects and preferences:</strong> Pattern grids, colors, assembly progress, reference images, inventory, theme, and language preferences are stored locally.</li>
+    <li><strong>iCloud sync content:</strong> If you enable iCloud Project Sync in Settings, project files, pattern data, thumbnails, reference images, modification times, and deletion state are stored in the private iCloud container associated with your Apple Account so they can sync across your devices. We cannot view or download content from that container.</li>
+    <li><strong>External link imports:</strong> When you submit an image or webpage link, the App connects directly to that URL and any referenced image URL to retrieve and recognize the pattern. Requests do not pass through our servers, but the destination website or content-delivery provider may receive your IP address, requested URL, request time, and ordinary network-request information.</li>
+    <li><strong>Clipboard content:</strong> The App can ask the system whether the clipboard appears to contain a URL without reading its contents. The clipboard text is provided to the App only after you tap Paste, and is used for external link import. It is not sent to us.</li>
     <li><strong>Purchase status:</strong> Apple processes subscriptions and one-time purchases. The App may receive product and entitlement status through StoreKit, but it does not receive your card number or complete payment details.</li>
     <li><strong>Support messages:</strong> We receive your email address, message, and any attachments only if you choose to email us.</li>
   </ul>
@@ -29,21 +32,30 @@
   <h2>3. What we do not do</h2>
   <p>The App requires no account and currently integrates no advertising network, third-party analytics SDK, or cross-app tracking technology. We do not sell personal information, build advertising profiles, or operate a server that centrally stores user photos and patterns.</p>
 
-  <h2>4. Photo access and on-device processing</h2>
-  <p>The App uses Apple’s system photo picker, and you choose each image to import. You can change photo access in system Settings. Revoking access does not automatically erase reference images already stored in projects; delete the project and empty Trash, or uninstall the App.</p>
+  <h2>4. Permissions and system capabilities</h2>
+  <ul>
+    <li><strong>Photos:</strong> The App uses Apple’s system photo picker and receives only the images you select. It does not browse your entire photo library in the background. You can change photo access in system Settings. Revoking access does not erase reference images already stored in projects; delete the project and empty Trash, or uninstall the App.</li>
+    <li><strong>iCloud Drive:</strong> Used only after you enable iCloud Project Sync, to sync projects, thumbnails, reference images, and deletion state. Turning sync off stops future synchronization but does not automatically remove copies already stored in iCloud or on other devices.</li>
+    <li><strong>Network:</strong> Used to access external links you submit, retrieve their webpages or images, and connect to Apple App Store, StoreKit, and iCloud services. The App does not use the network to upload projects to a developer server.</li>
+    <li><strong>Clipboard:</strong> Used only to paste an external link. Actual clipboard content is read only after you tap Paste.</li>
+    <li><strong>Purchases:</strong> StoreKit displays products, completes and restores purchases, and verifies Pro entitlement. Apple handles payment credentials.</li>
+  </ul>
+  <p>The App does not request access to the camera, microphone, location, contacts, Bluetooth, or advertising tracking.</p>
 
   <h2>5. Storage, backups, and deletion</h2>
-  <p>Projects are stored in the App’s local container. Depending on your device and Apple Account settings, local data may be included in a device backup supplied by Apple. Apple processes that backup under its own terms; it is not uploaded to our servers.</p>
-  <p>You can delete projects and empty Trash in the App. Uninstalling normally deletes App data from the device, although restoring a device backup may restore that data.</p>
+  <p>By default, projects are stored in the App’s local container. Depending on your device and Apple Account settings, local data may be included in a device backup supplied by Apple. Apple processes that backup under its own terms; it is not uploaded to our servers.</p>
+  <p>When iCloud Project Sync is enabled, the App copies project directories to the private iCloud container associated with your Apple Account and synchronizes them according to project modification time. Deletion state also syncs, placing the project in Trash on other devices. Turning sync off does not automatically remove cloud copies. You can manage related data through Apple’s iCloud storage controls.</p>
+  <p>You can delete projects and empty Trash in the App. Uninstalling normally deletes App data from the current device, but does not automatically delete synchronized copies in iCloud or on other devices. Restoring a device backup may also restore data.</p>
 
   <h2>6. Third-party services</h2>
-  <p>Apple supplies App distribution, purchases, subscription management, refunds, and system ratings. Apple handles associated information under its own privacy policy. When you use the system share sheet, content is handed to the app you select, whose later processing is outside BeadCube’s control.</p>
+  <p>Apple supplies App distribution, purchases, subscription management, refunds, system ratings, and optional iCloud synchronization. Apple handles associated information under its own privacy policy. When you use the system share sheet, content is handed to the app you select, whose later processing is outside BeadCube’s control.</p>
+  <p>For external link imports, requests are sent directly to the submitted website and its referenced image servers. Different sites may log IP addresses, User-Agent, request paths, cookies, or other ordinary network information under their own privacy policies. Import only content you trust and have the right to use.</p>
 
   <h2>7. Children</h2>
   <p>The App is not designed to collect children’s personal information and includes no account, advertising, or social service. Minors should use photo and sharing features with a guardian and avoid including unnecessary personal information in support email.</p>
 
   <h2>8. Security and international processing</h2>
-  <p>Local information is protected by the iOS/iPadOS app sandbox. No system is completely secure, so protect your device passcode and use system backups as appropriate. Except when you voluntarily send support email, we do not initiate international transfer of local projects.</p>
+  <p>Local information is protected by the iOS/iPadOS app sandbox. No system is completely secure, so protect your device passcode and use system backups as appropriate. We do not transfer projects to a developer server. If you enable iCloud sync, Apple may process or transfer synchronized content according to your account, region, and service arrangements. External-link request information is handled by the destination website under its policy, and support-email providers process content you voluntarily send.</p>
 
   <h2>9. Changes</h2>
   <p>We may revise this Policy when features, legal requirements, or data practices change and will update the effective date. Where required, material changes will be announced in the App or through its distribution channel.</p>
